@@ -1,0 +1,145 @@
+$header1: 2.5rem;
+$header2: 4rem;
+$header3: 3.3rem;
+$header4: 2rem;
+$text: 2.5rem;
+$gradient: linear-gradient(left, #38d39f, #38a4d3);
+$background-color:#154353;
+$gray-text:#2c2c2c;
+
+@import 'global';
+@import 'intro';
+@import 'aboutus';
+@import 'contactUs';
+@import 'store';
+
+@media screen and (max-width: 754px) {
+
+    // GENERAL CONFIG
+    html {
+        font-size: 42.4%;
+    }
+
+    // INTRO SECTION
+    .intro {
+        display: flex;
+        justify-content: center;
+    }
+
+    .divTitle {
+        margin-top: 25%;
+        width: 70%;
+        text-align: center;
+        display: flex;
+
+        h1 {
+            font-size: 2.8rem;
+        }
+    }
+
+    .divBurger {
+        display: block;
+    }
+
+    .nav-links {
+        min-height: 92vh;
+        width: 65%;
+        background-color: #5E1742;
+        position: fixed;
+        top: 8vh;
+        left: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10rem 0rem;
+        transition: transform 1s ease;
+    }
+
+    .nav-open {
+        transform: translate(-100%, 0%);
+    }
+
+    .toggle .burger1 {
+        transform: rotateZ(45deg) translateY(350%);
+    }
+
+    .toggle .burger2 {
+        opacity: 0;
+    }
+
+    .toggle .burger3 {
+        transform: rotateZ(-45deg) translateY(-350%);
+    }
+
+    // ABOUT SECTION
+    .aboutUsText {
+        width: 70%;
+        padding: 2rem;
+    }
+
+    // CONTACT US SECTION
+    .formContactUs {
+        width: 90%;
+        margin: auto;
+        padding: 2rem;
+
+        input {
+            width: 100%;
+        }
+    }
+
+
+    // Store PAGE
+    .navLinkStore{
+        position: fixed;
+        min-height: 92vh;
+        width: 65%;
+        background-color: #0487D9;
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 0rem;
+        top:8vh;
+        left: 100%;
+        transition: all 0.5s ease-in;
+    }
+
+    #txtBuscarStore{
+        width: 70%;
+    }
+
+    .divCards{
+        flex: 0 1 20rem;
+    }
+
+    .divProductsCards{
+        display: flex;
+        justify-content: center;
+    }
+    .divBurger{
+        min-height: 8vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .line1,
+    .line2,
+    .line3{
+        background-color: white;
+        width: 5rem;
+        height: 0.6rem;
+        margin: 0.5rem;
+    }
+
+    
+
+}
+
+// ANIMATION
+@keyframes aniNavBar {
+    from {
+        transform: translate(100%, 0%);
+    }
+
+    to {
+        transform: translate(0%, 0%);
+    }
+}

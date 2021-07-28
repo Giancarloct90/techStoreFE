@@ -1,0 +1,60 @@
+.contactUs {
+    min-height: 100vh;
+    background: url("../img/contactUs1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.formContactUs {
+    margin-top: 15rem;
+    background-color: rgba(15, 23, 35, 0.4);
+    padding: 5rem;
+    border-radius: 1.2rem;
+
+    .diviForm {
+        display: flex;
+        color: white;
+
+        .divLabels,
+        .divText {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 10rem;
+        }
+    }
+
+    label,
+    input,
+    .btnContactUsForm {
+        margin: 0.9rem;
+    }
+
+    .txtInput {
+        border: none;
+        border-radius: 0.6rem;
+        padding: 0rem 1rem;
+    }
+
+    .btnContactUsForm {
+        border: none;
+        border-radius: 0.6rem;
+        margin-top: 3rem;
+        width: 95%;
+        padding: 0.9rem;
+        background: #628699;
+        color: white;
+        font-weight: 900;
+        cursor: pointer;
+        transition: all 0.7s ease;
+
+        &:hover {
+            background: white;
+            color: #628699;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.aboutUs {
+    min-height: 100vh;
+    background: url('../img/aboutUs.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // linear-gradient(rgba(0, 0, 0, 0.8), transparent), 
+    padding-top: 10rem;
+}
+
+.aboutUsText {
+    background-color: #628699;
+    padding: 5rem;
+    color: #FFFEE0;
+    border-radius: 1.2rem;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+}
