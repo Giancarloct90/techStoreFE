@@ -12,6 +12,7 @@ $gray-text:#2c2c2c;
 @import 'aboutus';
 @import 'contactUs';
 @import 'store';
+@import 'newProducts';
 
 @media screen and (max-width: 754px) {
 
@@ -127,19 +128,22 @@ $gray-text:#2c2c2c;
         width: 5rem;
         height: 0.6rem;
         margin: 0.5rem;
+        transition: all 0.5s ease-in;
     }
 
+    .toggle .line1 {
+        transform: rotateZ(45deg) translateY(350%);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotateZ(-45deg) translateY(-350%);
+    }
     
 
 }
 
 // ANIMATION
-@keyframes aniNavBar {
-    from {
-        transform: translate(100%, 0%);
-    }
-
-    to {
-        transform: translate(0%, 0%);
-    }
-}

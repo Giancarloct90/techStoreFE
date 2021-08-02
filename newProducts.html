@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Store</title>
+    <meta name="description" content="Tienda de ventas de productos de tecnologia">
+    <meta name="robots" content="index,follow">
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <script defer src="./js/index.Store.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css1?family=Otomanopee+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAV BAR -->
+    <header class="headStore">
+        <nav class="navStore">
+            <h1 class="logo">Tech Store</h1>
+            <ul id="navLinkStore" class="navLinkStore">
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="./store.html">PRODUCTOS</a></li>
+            </ul>
+
+            <div id="divBurger" class="divBurger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- NEW PRODUCT SECTION -->
+    <section class="newProducts">
+        <div class="divTitle2">
+            <span class="newProductTitle">New Products</span>
+        </div>
+        
+        <div class="divForm">
+            <form action="" class="formNewProducts">
+                <div class="divName">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name">
+                </div>
+
+                <div class="divPrecio">
+                    <label for="precio">Precio</label>
+                    <input type="text" name="precio" id="precio">
+                </div>
+                <div class="divFile">
+                    <label for="file">Fotos</label>
+                    <input type="file" name="file" id="file">
+                </div>
+
+                <button class="btnNewProducts">Enviar Info</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

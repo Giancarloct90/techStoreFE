@@ -1,6 +1,16 @@
 .headStore {
     background: #0487D9;
 }
+.logo {
+    flex: 1 1 20rem;
+    font-family: 'Press Start 2P', cursive;
+    font-size: $header4;
+    min-height: 8vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
 
 .navStore {
     // min-height: 8vh;

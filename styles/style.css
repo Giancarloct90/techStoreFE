@@ -214,6 +214,16 @@ li {
   background: #0487D9;
 }
 
+.logo {
+  flex: 1 1 20rem;
+  font-family: "Press Start 2P", cursive;
+  font-size: 2rem;
+  min-height: 8vh;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
 .navStore {
   width: 80%;
   margin: auto;
@@ -313,6 +323,51 @@ svg {
 .divCards .cardContent h4,
 .divCards .cardContent button {
   margin-top: 0.5rem;
+}
+
+.newProducts {
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divTitle2 {
+  margin-top: 4rem;
+}
+
+.newProductTitle {
+  text-shadow: 0px;
+  font-size: 3rem;
+  color: black;
+}
+
+.formNewProducts {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.divName,
+.divPrecio,
+.divFile {
+  margin: 2rem;
+  display: flex;
+}
+
+.btnNewProducts {
+  margin-top: 2rem;
+  border: none;
+  background-color: #66bbec;
+  width: 60%;
+  height: 4rem;
+  padding: 0.7rem;
+  color: white;
+  border-radius: 0.8rem;
+}
+
+label, input {
+  flex: 1 3 10rem;
 }
 
 @media screen and (max-width: 754px) {
@@ -422,21 +477,18 @@ svg {
     width: 5rem;
     height: 0.6rem;
     margin: 0.5rem;
+    transition: all 0.5s ease-in;
   }
-}
-@-webkit-keyframes aniNavBar {
-  from {
-    transform: translate(100%, 0%);
+
+  .toggle .line1 {
+    transform: rotateZ(45deg) translateY(350%);
   }
-  to {
-    transform: translate(0%, 0%);
+
+  .toggle .line2 {
+    opacity: 0;
   }
-}
-@keyframes aniNavBar {
-  from {
-    transform: translate(100%, 0%);
-  }
-  to {
-    transform: translate(0%, 0%);
+
+  .toggle .line3 {
+    transform: rotateZ(-45deg) translateY(-350%);
   }
 }/*# sourceMappingURL=style.css.map */

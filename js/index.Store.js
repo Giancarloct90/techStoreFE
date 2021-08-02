@@ -5,4 +5,5 @@ const divBurger = document.getElementById("divBurger");
 divBurger.addEventListener('click',()=>{
     console.log('hello');
     navLinkStore.classList.toggle('nav-open');
+    divBurger.classList.toggle('toggle');
 });
