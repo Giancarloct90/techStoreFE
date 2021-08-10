@@ -90,6 +90,9 @@ $gray-text:#2c2c2c;
 
 
     // Store PAGE
+    .secStore{
+        width: 90%;
+    }
     .navLinkStore{
         position: fixed;
         min-height: 92vh;
@@ -105,6 +108,8 @@ $gray-text:#2c2c2c;
 
     #txtBuscarStore{
         width: 70%;
+        height: 5rem;
+        padding: 1rem 1rem;
     }
 
     .divCards{
@@ -125,14 +130,15 @@ $gray-text:#2c2c2c;
     .line2,
     .line3{
         background-color: white;
-        width: 5rem;
-        height: 0.6rem;
-        margin: 0.5rem;
+        width: 4rem;
+        height: 0.5rem;
+        margin: 0.3rem;
         transition: all 0.5s ease-in;
     }
 
     .toggle .line1 {
-        transform: rotateZ(45deg) translateY(350%);
+        transform: rotateZ(45deg) translateY(300%);
+        background-color: #8b41a1;
     }
 
     .toggle .line2 {
@@ -140,9 +146,19 @@ $gray-text:#2c2c2c;
     }
 
     .toggle .line3 {
-        transform: rotateZ(-45deg) translateY(-350%);
+        transform: rotateZ(-45deg) translateY(-300%);
+        background-color: #8b41a1;
     }
-    
+
+
+    // NEW PRODUCT SECTION
+    .divForm{
+        width: 90%;
+        input{
+            width: 50%;
+        }
+    }
+
 
 }
 

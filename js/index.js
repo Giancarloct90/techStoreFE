@@ -17,3 +17,4 @@ links.forEach((link, index) => {
         nav_links.classList.toggle('nav-open');
     })
 });
+

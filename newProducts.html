@@ -11,6 +11,8 @@
 
     <link rel="stylesheet" href="./styles/style.css">
     <script defer src="./js/index.Store.js"></script>
+    <script defer src="js/getData.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css1?family=Otomanopee+One&display=swap" rel="stylesheet">
@@ -39,27 +41,31 @@
     <!-- NEW PRODUCT SECTION -->
     <section class="newProducts">
         <div class="divTitle2">
-            <span class="newProductTitle">New Products</span>
+            <span class="newProductTitle">Nuevo Producto</span>
         </div>
         
         <div class="divForm">
-            <form action="" class="formNewProducts">
+           
                 <div class="divName">
                     <label for="name">Nombre</label>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="nombre" id="nombre" required>
                 </div>
 
                 <div class="divPrecio">
                     <label for="precio">Precio</label>
-                    <input type="text" name="precio" id="precio">
+                    <input type="text" name="precio" id="precio" required>
+                </div>
+                <div class="divCantidad">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="text" name="cantidad" id="cantidad" required>
                 </div>
                 <div class="divFile">
                     <label for="file">Fotos</label>
-                    <input type="file" name="file" id="file">
+                    <input type="file" name="file" id="file" required>
                 </div>
 
-                <button class="btnNewProducts">Enviar Info</button>
-            </form>
+                <button class="btnNewProducts" id="btnNuevoProducto">GURDAR PRODUCTO</button>
+            
         </div>
     </section>
 </body>
