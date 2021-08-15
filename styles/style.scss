@@ -90,10 +90,11 @@ $gray-text:#2c2c2c;
 
 
     // Store PAGE
-    .secStore{
+    .secStore {
         width: 90%;
     }
-    .navLinkStore{
+
+    .navLinkStore {
         position: fixed;
         min-height: 92vh;
         width: 65%;
@@ -101,34 +102,36 @@ $gray-text:#2c2c2c;
         display: flex;
         flex-direction: column;
         padding: 5rem 0rem;
-        top:8vh;
+        top: 8vh;
         left: 100%;
         transition: all 0.5s ease-in;
     }
 
-    #txtBuscarStore{
+    #txtBuscarStore {
         width: 70%;
         height: 5rem;
         padding: 1rem 1rem;
     }
 
-    .divCards{
+    .divCards {
         flex: 0 1 20rem;
     }
 
-    .divProductsCards{
+    .divProductsCards {
         display: flex;
         justify-content: center;
     }
-    .divBurger{
+
+    .divBurger {
         min-height: 8vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
+
     .line1,
     .line2,
-    .line3{
+    .line3 {
         background-color: white;
         width: 4rem;
         height: 0.5rem;
@@ -152,9 +155,10 @@ $gray-text:#2c2c2c;
 
 
     // NEW PRODUCT SECTION
-    .divForm{
+    .divForm {
         width: 90%;
-        input{
+
+        input {
             width: 50%;
         }
     }
