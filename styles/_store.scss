@@ -1,6 +1,7 @@
 .headStore {
     background: #0487D9;
 }
+
 .logo {
     flex: 1 1 20rem;
     font-family: 'Press Start 2P', cursive;
@@ -97,7 +98,7 @@ svg {
     .cardContent {
         text-align: center;
 
-        #precioCardProduct{
+        #precioCardProduct {
             color: red;
         }
 
@@ -134,4 +135,11 @@ svg {
             margin-top: 0.5rem;
         }
     }
+}
+
+.loadDiv {
+    position: absolute;
+    top: 35rem;
+    right: 50%;
+    transform: translate(50%, 0%);
 }

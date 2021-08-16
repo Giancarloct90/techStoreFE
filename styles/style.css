@@ -333,6 +333,13 @@ svg {
   margin-top: 0.5rem;
 }
 
+.loadDiv {
+  position: absolute;
+  top: 35rem;
+  right: 50%;
+  transform: translate(50%, 0%);
+}
+
 .newProducts {
   min-height: 92vh;
   display: flex;
@@ -394,6 +401,39 @@ svg {
   background-color: #4ca5d8;
 }
 
+.divNotify {
+  color: #f8f3e2;
+  height: 8rem;
+  width: 30%;
+  position: fixed;
+  bottom: -20%;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  transition: all 0.9s ease;
+}
+
+.enableNotify {
+  bottom: 20%;
+}
+
+@-webkit-keyframes fadeOutNotify {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOutNotify {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 @media screen and (max-width: 754px) {
   html {
     font-size: 42.4%;
@@ -524,10 +564,38 @@ svg {
     background-color: #8b41a1;
   }
 
+  .loadDiv {
+    width: 30%;
+    height: 30%;
+  }
+  .loadDiv img {
+    width: 100%;
+  }
+
   .divForm {
     width: 90%;
   }
   .divForm input {
     width: 50%;
+  }
+
+  .divNotify {
+    width: 80%;
+  }
+}
+@-webkit-keyframes load {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes load {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }/*# sourceMappingURL=style.css.map */

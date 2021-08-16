@@ -13,6 +13,11 @@
     <script src="./js/DataFunctions2.js"></script>
     <script defer src="js/newProductsJS.js"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -39,29 +44,31 @@
         <div class="divTitle2">
             <span class="newProductTitle">Nuevo Producto</span>
         </div>
-        
+        <!-- <button id="btnTest"> click please </button> -->
+        <div id="divNotify" class="divNotify">
+            <h1>El producto se guardo con exito</h1>
+        </div>
         <div class="divForm">
-           
-                <div class="divName">
-                    <label for="name">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" required>
-                </div>
+            <div class="divName">
+                <label for="name">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required>
+            </div>
 
-                <div class="divPrecio">
-                    <label for="precio">Precio</label>
-                    <input type="text" name="precio" id="precio" required>
-                </div>
-                <div class="divCantidad">
-                    <label for="cantidad">Cantidad</label>
-                    <input type="text" name="cantidad" id="cantidad" required>
-                </div>
-                <div class="divFile">
-                    <label for="file">Fotos</label>
-                    <input type="file" name="file" id="file" required>
-                </div>
+            <div class="divPrecio">
+                <label for="precio">Precio</label>
+                <input type="text" name="precio" id="precio" required>
+            </div>
+            <div class="divCantidad">
+                <label for="cantidad">Cantidad</label>
+                <input type="text" name="cantidad" id="cantidad" required>
+            </div>
+            <div class="divFile">
+                <label for="file">Fotos</label>
+                <input type="file" name="file" id="file" required>
+            </div>
 
-                <button class="btnNewProducts" id="btnNuevoProducto">GURDAR PRODUCTO</button>
-            
+            <button class="btnNewProducts" id="btnNuevoProducto">GURDAR PRODUCTO</button>
+
         </div>
     </section>
 </body>

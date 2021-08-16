@@ -153,6 +153,14 @@ $gray-text:#2c2c2c;
         background-color: #8b41a1;
     }
 
+    .loadDiv {
+        img {
+            width: 100%;
+        }
+
+        width: 30%;
+        height: 30%;
+    }
 
     // NEW PRODUCT SECTION
     .divForm {
@@ -162,8 +170,21 @@ $gray-text:#2c2c2c;
             width: 50%;
         }
     }
+    .divNotify {
+        width: 80%;
+    }
 
 
 }
 
 // ANIMATION
+@keyframes load {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
+}
