@@ -340,6 +340,18 @@ svg {
   transform: translate(50%, 0%);
 }
 
+.divLbl {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  height: auto;
+  background-color: #df4242;
+  color: white;
+  border-radius: 0.8rem;
+  padding: 0.5rem 0rem;
+  display: none;
+}
+
 .newProducts {
   min-height: 92vh;
   display: flex;
@@ -397,8 +409,7 @@ svg {
   cursor: pointer;
 }
 .btnNewProducts:hover {
-  height: 6rem;
-  background-color: #4ca5d8;
+  background-color: #2d98d6;
 }
 
 .divNotify {
@@ -417,6 +428,33 @@ svg {
   bottom: 20%;
 }
 
+.divValidateForm {
+  background-color: #e75858;
+  padding: 1rem 3rem;
+  color: white;
+  margin-top: 1.5rem;
+  border-radius: 0.7rem;
+  display: none;
+}
+.divValidateForm li {
+  margin: 0.5rem;
+  list-style: disc;
+  list-style-position: inside;
+  font-size: 2rem;
+}
+
+.loadDiv2 {
+  width: 3%;
+  position: absolute;
+  top: 56rem;
+  right: 50%;
+  transform: translate(50%, 0%);
+  display: none;
+}
+.loadDiv2 img {
+  width: 100%;
+}
+
 @-webkit-keyframes fadeOutNotify {
   from {
     opacity: 1;
@@ -432,6 +470,11 @@ svg {
   }
   to {
     opacity: 0;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .enableNotify {
+    bottom: 8%;
   }
 }
 @media screen and (max-width: 754px) {
@@ -579,8 +622,24 @@ svg {
     width: 50%;
   }
 
+  .enableNotify {
+    bottom: 30%;
+  }
+
   .divNotify {
     width: 80%;
+  }
+
+  .divValidateForm {
+    margin-top: 4rem;
+  }
+  .divValidateForm li {
+    font-size: 2.5rem;
+  }
+
+  .loadDiv2 {
+    width: 10%;
+    top: 55%;
   }
 }
 @-webkit-keyframes load {

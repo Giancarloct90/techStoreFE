@@ -14,6 +14,12 @@ $gray-text:#2c2c2c;
 @import 'store';
 @import 'newProducts';
 
+@media screen and (max-width: 1600px) {
+    .enableNotify {
+        bottom: 8%;
+    }
+}
+
 @media screen and (max-width: 754px) {
 
     // GENERAL CONFIG
@@ -170,12 +176,32 @@ $gray-text:#2c2c2c;
             width: 50%;
         }
     }
+
+    .enableNotify {
+        bottom: 30%;
+    }
+
     .divNotify {
         width: 80%;
     }
 
+    .divValidateForm {
+        margin-top: 4rem;
+
+        li {
+            font-size: 2.5rem;
+        }
+    }
+
+    .loadDiv2 {
+        width: 10%;
+        top: 55%;
+    }
+
 
 }
+
+
 
 // ANIMATION
 @keyframes load {

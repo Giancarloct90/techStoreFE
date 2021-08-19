@@ -1,7 +1,8 @@
 class DataFunctions {
 
     constructor() {
-        this.uri = 'https://resttechstore.herokuapp.com/products';
+        // this.uri = 'https://resttechstore.herokuapp.com/products';
+        this.uri = 'http://localhost:3000/products';
     }
 
     // FUNCTION TO GET ALL PRODUCTS
@@ -12,7 +13,7 @@ class DataFunctions {
             console.log(products);
             return products;
         } catch (e) {
-            console.log('error server', e);
+            return products;
         }
     }
 

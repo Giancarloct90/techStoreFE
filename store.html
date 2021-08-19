@@ -10,6 +10,7 @@
     <meta name="robots" content="index,follow">
 
     <link rel="stylesheet" href="./styles/style.css">
+    <script defer src="./js/utils/notify.js"></script>
     <script src="./js/DataFunctions2.js"></script>
     <script defer src="./js/store.js"></script>
 
@@ -23,7 +24,7 @@
 </head>
 
 <body>
-
+   
     <!-- NAV BAR -->
     <header class="headStore">
         <nav class="navStore">
@@ -44,6 +45,9 @@
 
     <!-- STORE SECTION -->
     <section class="secStore" name="secStore" id="secStore">
+        <div id="divNotify" class="divNotify">
+        </div>
+
         <div class="divBuscarStore">
             <h3>Buscar Producto</h3>
             <input type="text" class="txtBuscarStore" name="txtBuscarStore" id="txtBuscarStore">
@@ -51,6 +55,9 @@
        
         <div id="loadDiv" class="loadDiv">
             <img src="./img/load.gif" alt="">
+        </div>
+        <div id="divLbl" class="divLbl">
+            <label id="lblNotify" class="lblNotify" for="">Servidor Inalcanzable</label>
         </div>
         
         <div id="divProductsCards" class="divProductsCards">

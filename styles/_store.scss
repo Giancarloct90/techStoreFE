@@ -143,3 +143,15 @@ svg {
     right: 50%;
     transform: translate(50%, 0%);
 }
+
+.divLbl {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    height: auto;
+    background-color: rgb(223, 66, 66);
+    color: white;
+    border-radius: 0.8rem;
+    padding: 0.5rem 0rem;
+    display: none;
+}
