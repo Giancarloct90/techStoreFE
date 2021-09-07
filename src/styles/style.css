@@ -43,59 +43,56 @@ li {
   list-style: none;
 }
 
-.headIndex {
-  background-color: #5E1742;
-}
-
-.navIndex {
-  min-height: 8vh;
-  width: 90%;
-  margin: auto;
-  color: white;
-  display: flex;
-  align-items: center;
+.headStore {
+  background: #0487D9;
 }
 
 .logo {
   flex: 1 1 20rem;
   font-family: "Press Start 2P", cursive;
   font-size: 2rem;
-}
-
-.nav-links {
-  flex: 2 1 40rem;
   min-height: 8vh;
   display: flex;
   align-items: center;
-  width: 50%;
-  justify-content: space-between;
-}
-
-.nav-links li a {
   color: white;
-  transition: all 0.9s ease;
-}
-.nav-links li a:hover {
-  border-bottom: white 1px solid;
 }
 
-.burger1,
-.burger2,
-.burger3 {
-  background-color: white;
-  width: 3rem;
-  height: 0.5rem;
-  margin: 0.7rem;
-  transition: all 0.5s;
+.navStore {
+  width: 90%;
+  margin: auto;
+  display: flex;
 }
 
-.divBurger {
-  display: none;
+.divLogoStore,
+.navLinkStore {
+  min-height: 8vh;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1 10rem;
+}
+.divLogoStore li a,
+.navLinkStore li a {
+  color: white;
+  font-family: "Otomanopee One", sans-serif;
+}
+.divLogoStore li a:hover,
+.navLinkStore li a:hover {
+  border-bottom: white 0.2rem solid;
+}
+
+.navLinkStore {
+  flex: 1 1 60rem;
+}
+
+.introSection {
+  -webkit-animation: load2 2s ease-in-out;
+          animation: load2 2s ease-in-out;
 }
 
 .intro {
   min-height: 92vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../img/introPic.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../asset/img/introPic.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -141,7 +138,7 @@ li {
 
 .aboutUs {
   min-height: 100vh;
-  background: url("../img/aboutUs.jpg");
+  background: url("../asset/img/aboutUs.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -160,7 +157,7 @@ li {
 
 .contactUs {
   min-height: 100vh;
-  background: url("../img/contactUs1.jpg");
+  background: url("../asset/img/contactUs1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -211,56 +208,20 @@ li {
   color: #628699;
 }
 
-.headStore {
-  background: #0487D9;
-}
-
-.logo {
-  flex: 1 1 20rem;
-  font-family: "Press Start 2P", cursive;
-  font-size: 2rem;
-  min-height: 8vh;
-  display: flex;
-  align-items: center;
-  color: white;
-}
-
-.navStore {
-  width: 80%;
-  margin: auto;
-  display: flex;
-}
-
-.divLogoStore,
-.navLinkStore {
-  min-height: 8vh;
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  flex: 1 1 10rem;
-}
-.divLogoStore li a,
-.navLinkStore li a {
-  color: white;
-  font-family: "Otomanopee One", sans-serif;
-}
-.divLogoStore li a:hover,
-.navLinkStore li a:hover {
-  border-bottom: white 0.2rem solid;
-}
-
-.navLinkStore {
-  flex: 1 1 60rem;
-}
-
-svg {
-  fill: white;
-}
-
 .secStore {
   width: 85%;
   margin: auto;
   height: 92vh;
+}
+
+.divBigModal {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  display: none;
 }
 
 .divBuscarStore {
@@ -297,6 +258,11 @@ svg {
 .divCards img {
   width: 100%;
   height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.divCards .cardPic {
+  min-height: 20rem;
 }
 .divCards .cardContent {
   text-align: center;
@@ -316,7 +282,7 @@ svg {
   color: green;
   font-size: 1.5rem;
 }
-.divCards .cardContent button {
+.divCards .cardContent .btnDetalleStore {
   border: none;
   border-radius: 0.5rem;
   background-color: #568C63;
@@ -324,13 +290,17 @@ svg {
   color: white;
   padding: 0.5rem;
   cursor: pointer;
-  width: 10rem;
+  width: 15rem;
+  height: 3.2rem;
 }
 .divCards .cardContent h1,
 .divCards .cardContent h3,
 .divCards .cardContent h4,
-.divCards .cardContent button {
+.divCards .cardContent .btnDetalleStore {
   margin-top: 0.5rem;
+}
+.divCards .cardContent h4 {
+  margin-bottom: 2rem;
 }
 
 .loadDiv {
@@ -352,12 +322,78 @@ svg {
   display: none;
 }
 
+.divModal {
+  border: 1px solid black;
+  padding: 5rem;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-color: white;
+  height: 50rem;
+  width: 70rem;
+}
+.divModal .titleModal {
+  text-align: center;
+}
+.divModal .titleModal h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.divModal .divContent {
+  display: flex;
+}
+.divModal .divContent .imgModal {
+  flex: 1 1 20rem;
+  margin: 1rem;
+}
+.divModal .divContent .imgModal img {
+  height: 100%;
+  width: 100%;
+}
+.divModal .divContent .infoModal {
+  margin: 1rem;
+  flex: 2 1 20rem;
+}
+.divModal .divContent .infoModal h1 {
+  color: red;
+}
+.divModal .divContent .infoModal h2 {
+  font-size: 2rem;
+  color: green;
+}
+.divModal .divContent .infoModal p {
+  font-size: 2.2rem;
+}
+.divModal .divContent .infoModal .btnModal {
+  width: 100%;
+  border: none;
+  background-color: #9867bb;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  text-align: center;
+  cursor: pointer;
+}
+.divModal .divContent .infoModal h1,
+.divModal .divContent .infoModal h2,
+.divModal .divContent .infoModal p,
+.divModal .divContent .infoModal .btnModal {
+  margin-bottom: 1.5rem;
+}
+.divModal .closeBTN {
+  float: right;
+  font-size: 6rem;
+  font-weight: 1400;
+  cursor: pointer;
+}
+
 .newProducts {
   min-height: 92vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
@@ -416,7 +452,10 @@ svg {
   color: #f8f3e2;
   height: 8rem;
   width: 30%;
+  margin: auto;
   position: fixed;
+  right: 50%;
+  transform: translate(50%, 0%);
   bottom: -20%;
   padding: 2rem;
   text-align: center;
@@ -472,6 +511,15 @@ svg {
     opacity: 0;
   }
 }
+.divNotFound {
+  height: 92vh;
+}
+
+.imgDivNotFound {
+  width: 100%;
+  height: 100%;
+}
+
 @media screen and (max-width: 1600px) {
   .enableNotify {
     bottom: 8%;
@@ -499,19 +547,6 @@ svg {
 
   .divBurger {
     display: block;
-  }
-
-  .nav-links {
-    min-height: 92vh;
-    width: 65%;
-    background-color: #5E1742;
-    position: fixed;
-    top: 8vh;
-    left: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 10rem 0rem;
-    transition: transform 1s ease;
   }
 
   .nav-open {
@@ -550,15 +585,18 @@ svg {
 
   .navLinkStore {
     position: fixed;
-    min-height: 92vh;
+    min-height: 93vh;
     width: 65%;
     background-color: #0487D9;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 5rem 0rem;
-    top: 8vh;
+    top: 7vh;
     left: 100%;
     transition: all 0.5s ease-in;
+    border: none;
+    padding: 10rem 5rem;
   }
 
   #txtBuscarStore {
@@ -595,7 +633,6 @@ svg {
 
   .toggle .line1 {
     transform: rotateZ(45deg) translateY(300%);
-    background-color: #8b41a1;
   }
 
   .toggle .line2 {
@@ -604,7 +641,6 @@ svg {
 
   .toggle .line3 {
     transform: rotateZ(-45deg) translateY(-300%);
-    background-color: #8b41a1;
   }
 
   .loadDiv {
@@ -615,8 +651,15 @@ svg {
     width: 100%;
   }
 
-  .divForm {
+  .divModal {
     width: 90%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .divForm {
+    width: 100%;
+    background-color: #0487D9;
   }
   .divForm input {
     width: 50%;
@@ -656,5 +699,21 @@ svg {
   }
   to {
     opacity: 0;
+  }
+}
+@-webkit-keyframes load2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes load2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }/*# sourceMappingURL=style.css.map */

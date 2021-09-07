@@ -1,0 +1,47 @@
+.headStore {
+    background: #0487D9;
+}
+
+.logo {
+    flex: 1 1 20rem;
+    font-family: 'Press Start 2P', cursive;
+    font-size: $header4;
+    min-height: 8vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+
+.navStore {
+    // min-height: 8vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.divLogoStore,
+.navLinkStore {
+    min-height: 8vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 10rem;
+
+    li {
+        a {
+            color: white;
+            font-family: 'Otomanopee One', sans-serif;
+
+            &:hover {
+                border-bottom: white 0.2rem solid;
+            }
+        }
+    }
+
+
+}
+
+.navLinkStore {
+    flex: 1 1 60rem;
+}

@@ -8,11 +8,13 @@ $background-color:#154353;
 $gray-text:#2c2c2c;
 
 @import 'global';
+@import 'navBar';
 @import 'intro';
 @import 'aboutus';
 @import 'contactUs';
 @import 'store';
 @import 'newProducts';
+@import 'divNotFound';
 
 @media screen and (max-width: 1600px) {
     .enableNotify {
@@ -48,18 +50,18 @@ $gray-text:#2c2c2c;
         display: block;
     }
 
-    .nav-links {
-        min-height: 92vh;
-        width: 65%;
-        background-color: #5E1742;
-        position: fixed;
-        top: 8vh;
-        left: 100%;
-        display: flex;
-        flex-direction: column;
-        padding: 10rem 0rem;
-        transition: transform 1s ease;
-    }
+    // .nav-links {
+    //     min-height: 90vh;
+    //     width: 65%;
+    //     background-color: #5E1742;
+    //     position: fixed;
+    //     top: 8vh;
+    //     left: 100%;
+    //     display: flex;
+    //     flex-direction: column;
+    //     padding: 10rem 0rem;
+    //     transition: transform 1s ease;
+    // }
 
     .nav-open {
         transform: translate(-100%, 0%);
@@ -102,15 +104,19 @@ $gray-text:#2c2c2c;
 
     .navLinkStore {
         position: fixed;
-        min-height: 92vh;
+        min-height: 93vh;
+
         width: 65%;
         background-color: #0487D9;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         padding: 5rem 0rem;
-        top: 8vh;
+        top: 7vh;
         left: 100%;
         transition: all 0.5s ease-in;
+        border: none;
+        padding: 10rem 5rem;
     }
 
     #txtBuscarStore {
@@ -147,7 +153,6 @@ $gray-text:#2c2c2c;
 
     .toggle .line1 {
         transform: rotateZ(45deg) translateY(300%);
-        background-color: #8b41a1;
     }
 
     .toggle .line2 {
@@ -156,7 +161,6 @@ $gray-text:#2c2c2c;
 
     .toggle .line3 {
         transform: rotateZ(-45deg) translateY(-300%);
-        background-color: #8b41a1;
     }
 
     .loadDiv {
@@ -168,9 +172,16 @@ $gray-text:#2c2c2c;
         height: 30%;
     }
 
+    .divModal {
+        width: 90%;
+        height: auto;
+        padding: 1rem;
+    }
+
     // NEW PRODUCT SECTION
     .divForm {
-        width: 90%;
+        width: 100%;
+        background-color: #0487D9;
 
         input {
             width: 50%;
@@ -213,4 +224,14 @@ $gray-text:#2c2c2c;
         opacity: 0;
     }
 
+}
+
+@keyframes load2 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

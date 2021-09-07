@@ -1,0 +1,209 @@
+// STORE SECTION
+.secStore {
+    width: 85%;
+    margin: auto;
+    height: 92vh;
+}
+
+.divBigModal {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    display: none;
+}
+
+.divBuscarStore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        font-family: 'Otomanopee One', sans-serif;
+        margin-top: 5rem;
+    }
+
+    .txtBuscarStore {
+        margin: 3rem 0rem;
+        width: 70rem;
+        border-radius: 0.7rem;
+        padding: 0.7rem 2rem;
+    }
+}
+
+.divProductsCards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.divCards {
+    margin: 10rem;
+    flex: 0 1 22rem;
+    height: 37rem;
+    border: #F26513 0.2rem solid;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    margin: 1.5rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .cardPic {
+        min-height: 20rem;
+    }
+
+    .cardContent {
+        text-align: center;
+
+        #precioCardProduct {
+            color: red;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+            font-weight: 900;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        h4 {
+            color: green;
+            font-size: 1.5rem;
+        }
+
+        .btnDetalleStore {
+            border: none;
+            border-radius: 0.5rem;
+            // background-color: #8c568c;
+            background-color: #568C63;
+            font-size: 1.5rem;
+            color: white;
+            padding: 0.5rem;
+            cursor: pointer;
+            width: 15rem;
+            height: 3.2rem;
+        }
+
+        h1,
+        h3,
+        h4,
+        .btnDetalleStore {
+            margin-top: 0.5rem;
+        }
+
+        h4 {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+
+
+.loadDiv {
+    position: absolute;
+    top: 35rem;
+    right: 50%;
+    transform: translate(50%, 0%);
+}
+
+.divLbl {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    height: auto;
+    background-color: rgb(223, 66, 66);
+    color: white;
+    border-radius: 0.8rem;
+    padding: 0.5rem 0rem;
+    display: none;
+}
+
+// MODAL CSS 
+.divModal {
+    border: 1px solid black;
+    padding: 5rem;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background-color: white;
+    height: 50rem;
+    width: 70rem;
+
+    .titleModal {
+        text-align: center;
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .divContent {
+        display: flex;
+
+        .imgModal {
+            flex: 1 1 20rem;
+            margin: 1rem;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .infoModal {
+            margin: 1rem;
+            flex: 2 1 20rem;
+
+            h1 {
+                color: red;
+            }
+
+            h2 {
+                font-size: 2rem;
+                color: green;
+            }
+
+            p {
+                font-size: 2.2rem;
+
+            }
+
+            .btnModal {
+                width: 100%;
+                border: none;
+                background-color: rgb(152, 103, 187);
+                color: white;
+                padding: 1rem;
+                border-radius: 0.7rem;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            h1,
+            h2,
+            p,
+            .btnModal {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    .closeBTN {
+        float: right;
+        font-size: 6rem;
+        font-weight: 1400;
+        cursor: pointer;
+    }
+
+}

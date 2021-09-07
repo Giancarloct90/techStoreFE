@@ -5,13 +5,11 @@ const precio = document.getElementById('precio');
 const cantidad = document.getElementById('cantidad');
 const file = document.getElementById('file')
 const btnNuevoProducto = document.getElementById('btnNuevoProducto');
-// const btnTest = document.getElementById('btnTest');
 const newProducts = document.getElementById('newProducts');
 const navLinkStore = document.getElementById("navLinkStore");
 const divBurger = document.getElementById("divBurger");
 const divProductsCards = document.getElementById('divProductsCards');
 const divValidateForm = document.getElementById("divValidateForm");
-// const idH1DivNotify = document.getElementById('idH1DivNotify');
 const loadDiv2 = document.getElementById('loadDiv2');
 
 
